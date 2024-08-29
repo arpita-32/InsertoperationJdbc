@@ -16,7 +16,7 @@ public class InsertDemo {
 		String city1 = "goa";
 		
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc_db","root","123456789");
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc_db","","");
 		
 		PreparedStatement ps = con.prepareStatement("insert into register values(?,?,?,?,?)");
 		ps.setString(1, name1);
